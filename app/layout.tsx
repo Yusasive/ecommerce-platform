@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         alt: "Default Image",
       },
     ],
-    url: "https://www.yoursite.com",
+    url: "https://ecommerce-platform-yusasive.netlify.app",
     type: "website",
   },
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.yoursite.com" />
+        <link rel="canonical" href="https://ecommerce-platform-yusasive.netlify.app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={inter.className}>

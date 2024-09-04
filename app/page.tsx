@@ -5,10 +5,7 @@ import ProductList from '../components/ProductList';
 import { Product, ProductCategory } from '../types/product';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import { tailChase } from 'ldrs';
-
-// Register the tailChase loader
-tailChase.register();
+import TailChaseLoader from '../components/TailChaseLoader';
 
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -112,13 +109,7 @@ export default function HomePage() {
           </div>
 
           {loading ? (
-            <div className="flex justify-center items-center h-64">
-              <l-tail-chase
-                size="40"
-                speed="1.75"
-                color="black"
-              ></l-tail-chase>
-            </div>
+            <TailChaseLoader /> // Use the TailChaseLoader component here
           ) : error ? (
             <div className="text-red-600">{error}</div>
           ) : (
